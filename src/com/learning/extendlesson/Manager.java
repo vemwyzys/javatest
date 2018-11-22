@@ -21,7 +21,7 @@ public class Manager extends Employee{
     }
 
     /**
-     * 覆盖工资  Manager的工资等于薪水加上奖金
+     * 覆盖工资   Manager的工资等于薪水加上奖金
      */
     @Override
     public double getSalary(){
