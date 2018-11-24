@@ -1,6 +1,8 @@
 import com.learning.extendlesson.Employee;
 import com.learning.extendlesson.Manager;
 
+import java.lang.reflect.Method;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -29,5 +31,16 @@ public class Main {
             System.out.println("name:"+e.getName()+", salary:"+e.getSalary()+" hireDay:"+e.getHireDay());
         }
 
+        StringBuilder sb = new StringBuilder("abc");
+        sb.append(1);
+        Class<? extends StringBuilder> aClass = sb.getClass();
+        Method[] methods = aClass.getMethods();
+
+        String str = "123";
+        str.contains("a");
+        Class<? extends String> strClass = str.getClass();
+        Method[] strClassMethods = strClass.getMethods();
+
     }
 }
+c
