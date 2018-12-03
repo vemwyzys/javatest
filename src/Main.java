@@ -25,6 +25,10 @@ public class Main {
         employees[1] = new Employee("mary", 50d, 2017, 5, 30);
         employees[2] = new Employee("christina", 60d, 2018, 1, 31);
 
+        if(employees[0]instanceof Employee){
+
+        }
+
         //输出三位员工的信息
         for (Employee e :
                 employees) {

@@ -2,7 +2,7 @@ package com.learning.abstractClasses;
 
 import java.time.LocalDate;
 
-public class Employee extends Person {
+public class Employee extends Person implements Comparable<Employee>{
 
     private double salary;
     private LocalDate hireDay;
@@ -36,5 +36,13 @@ public class Employee extends Person {
 
     public void raiseSalary(int byPercent){
         salary= salary * (1 + byPercent/100);
+    }
+
+    /**
+     * 实现对比方法
+     */
+    @Override
+    public int compareTo(Employee other) {
+        return Double.compare(salary, other.salary);
     }
 }
